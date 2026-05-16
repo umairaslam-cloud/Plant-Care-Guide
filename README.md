@@ -17,7 +17,7 @@ A simple and beginner-friendly plant care website built using HTML and CSS.
 This project was created as my first web development project to practice frontend design and website structure.
 
 ## Live Demo
-Add your GitHub Pages link here
+https://umairaslam-cloud.github.io/Plant-Care-Guide/
 
 ## Author
 Umair Aslam
