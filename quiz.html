@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Quiz</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<header class="bg-success text-white text-center py-3">
+    <h1>Plant Care Quiz</h1>
+</header>
+
+<section class="container my-4">
+    <h2>Test Your Plant Care Knowledge!</h2>
+    <div id="quizContainer">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button class="btn btn-primary" id="nextButton">Next Question</button>
+    </div>
+    <div id="result" class="mt-4" style="display: none;">
+        <h3>Your Score: <span id="score"></span></h3>
+        <button class="btn btn-success" id="restartButton">Restart Quiz</button>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Plant Care Guide. All rights reserved.</p>
+</footer>
+
+<script>
+    const quizData = [
+        {
+            question: "What is the ideal light condition for most houseplants?",
+            options: ["Direct sunlight", "Indirect sunlight", "No light", "Artificial light"],
+            answer: "Indirect sunlight"
+        },
+        {
+            question: "How often should you water a typical houseplant?",
+            options: ["Every day", "Once a week", "Once a month", "Only when the soil is dry"],
+            answer: "Only when the soil is dry"
+        },
+        {
+            question: "What type of soil is best for most indoor plants?",
+            options: ["Sandy soil", "Clay soil", "Potting mix", "Garden soil"],
+            answer: "Potting mix"
+        },
+        {
+            question: "Which of the following is a common sign of overwatering?",
+            options: ["Yellowing leaves", "Brown tips", "Stunted growth", "All of the above"],
+            answer: "Yellowing leaves"
+        },
+        {
+            question: "What is the best way to fertilize houseplants?",
+            options: ["Every day", "Once a month", "Only in spring", "Whenever you remember"],
+            answer: "Once a month"
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function loadQuestion() {
+        const currentQuestion = quizData[currentQuestionIndex];
+        document.getElementById('question').innerText = currentQuestion.question;
+        const optionsContainer = document.getElementById('options');
+        optionsContainer.innerHTML = '';
+        currentQuestion.options.forEach(option => {
+            const button = document.createElement('button');
+            button.innerText = option;
+            button.className = 'btn btn-outline-primary m-1';
+            button.onclick = () => selectOption(option);
+            optionsContainer.appendChild(button);
+        });
+    }
+
+    function selectOption(selectedOption) {
+        const currentQuestion = quizData[currentQuestionIndex];
+        if (selectedOption === currentQuestion.answer) {
+            score++;
+        }
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+        } else {
+            showResult();
+        }
+    }
+
+    function showResult() {
+        document.getElementById('quizContainer').style.display = 'none';
+        document.getElementById('result').style.display = 'block';
+        document.getElementById('score').innerText = `${score} out of ${quizData.length}`;
+    }
+
+    document.getElementById('nextButton').addEventListener('click', loadQuestion);
+    document.getElementById('restartButton').addEventListener('click', () => {
+        currentQuestionIndex = 0;
+        score = 0;
+        document.getElementById('quizContainer').style.display = 'block';
+        document.getElementById('result').style.display = 'none';
+        loadQuestion();
+    });
+
+    // Load the first question
+    loadQuestion();
+</script>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9 ```html
+.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; /* Default text color */
+    background: url('background1.jpeg') no-repeat center center fixed; /* First background image */
+    background-size: cover; /* Cover the entire background */
+    text-align: center;
+}
+p {
+    color: white; /* Set paragraph text color to white */
+}
+/* Header Styles */
+header {
+    background-color: rgba(34, 139, 34, 0.8); /* Dark green with transparency */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: yellow; /* Yellow text for the header */
+}
+p {
+    color: white; /* Set paragraph text color to white */
+}
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+p {
+    color: white; /* Set paragraph text color to white */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: yellow; /* Yellow links */
+    text-decoration: none;
+    position: relative; /* For the box effect */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Section Styles */
+section {
+    background-color: rgba(139, 69, 19, 0.7); /* Brown with transparency */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section h2, section h3 {
+    color: yellow; /* Yellow for section headings */
+    position: relative; /* For the underline effect */
+}
+p {
+    color: white; /* Set paragraph text color to white */
+}
+
+section h2:hover, section h3:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styles */
+.button {
+    background-color: darkgreen; /* Dark green button */
+    color: white; /* White text on button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #228B22; /* Lighter green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(34, 139, 34, 0.8); /* Dark green footer */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: yellow; /* Yellow text for footer */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items on small screens */
+        margin: 10px 0;
+    }
+}
+
+/* Bootstrap Overrides */
+.text-white {
+    color: white !important; /* Ensure text is white */
+}
+
+/* Additional Bootstrap Utility Classes */
+.bg-success {
+    background-color: rgba(34, 139, 34, 0.8) !important; /* Override Bootstrap's success color */
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Dark background for footer */
+}
+
+.btn-primary {
+    background-color: darkgreen; /* Override Bootstrap primary button color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #228B22; /* Lighter green on hover */
+}

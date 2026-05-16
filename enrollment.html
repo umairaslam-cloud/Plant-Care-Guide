@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form - Mastering Plant Care Workshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bg-success text-white text-center py-3">
+    <h1>Enroll in Mastering Plant Care Workshop</h1>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="care-tips.html">Care Tips</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="common-issues.html">Common Issues</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="plant-database.html">Plant Database</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container my-4">
+    <h2>Enrollment Form</h2>
+    <form id="enrollmentForm" action="submit_enrollment.php" method="POST">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" class="form-control" min="16" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="allergies">Allergies or Special Needs:</label>
+            <textarea id="allergies" name="allergies" class="form-control" rows="4" placeholder="Please specify any allergies or special needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+    </form>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Plant Care Guide. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

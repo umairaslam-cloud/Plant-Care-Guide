@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Guide - Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<header class="bg-success text-white text-center py-3">
+    <h1>Plant Care Guide</h1>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="care-tips.html">Care Tips</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="common-issues.html">Common Issues</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="plant-database.html">Plant Database</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container my-4">
+    <h2>Welcome to Your Plant Care Resource</h2>
+    <p>Your go-to guide for keeping your plants healthy and thriving! Whether you're a beginner or an experienced gardener, we provide you with the knowledge and tools you need to nurture your green friends.</p>
+    
+    <h3>Basic Information on Plant Care</h3>
+    <p>Plants require a few essential elements to grow well: sunlight, water, soil, and nutrients. Understanding the specific needs of your plants is crucial for their health. Here are some basics:</p>
+    <ul>
+        <li><strong>Light:</strong> Different plants have varying light requirements. Ensure your plants receive the right amount of sunlight.</li>
+        <li><strong>Water:</strong> Overwatering is a common mistake. Check the soil moisture before watering.</li>
+        <li><strong>Soil:</strong> Use the appropriate soil type for your plants to ensure proper drainage and nutrient availability.</li>
+        <li><strong>Nutrients:</strong> Fertilize your plants according to their needs to promote healthy growth.</li>
+    </ul>
+
+    <button class="btn btn-primary" id="quizButton">Take Our Plant Care Quiz!</button>
+</section>
+
+<section class="container my-4">
+    <h2>Our Services</h2>
+    <p>At Plant Care Guide, we offer a variety of services to help you become a better plant parent:</p>
+    <ul>
+        <li><strong>Personalized Plant Care Plans:</strong> Get tailored advice based on your specific plants and environment.</li>
+        <li><strong>Plant Identification:</strong> Unsure about your plant? Use our database to identify it and learn how to care for it.</li>
+        <li><strong>Common Issues Diagnosis:</strong> Learn how to identify and solve common plant problems with our expert tips.</li>
+        <li><strong>Blog and Resources:</ li>Stay updated with the latest trends, tips, and tricks in plant care through our blog.</li>
+    </ul>
+</section>
+
+<section class="container my-4">
+    <h2>Upcoming Workshop: Mastering Plant Care</h2>
+    <p>Join our hands-on workshop where you will learn everything you need to know about caring for your plants. From watering techniques to pest management, this workshop covers it all!</p>
+    <p><strong>Date:</strong> Sunday, January 19, 2025</p>
+    <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+    <p><strong>Location:</strong> Community Garden Center, Gujrat, Pakistan</p>
+    <p><strong>Price:</strong> $50 per person</p>
+
+    <h3>Instructions for Enrollment</h3>
+    <ol>
+        <li>Fill out the enrollment form on our website.</li>
+        <li>Submit the form to confirm your spot in the workshop.</li>
+        <li>You will receive a confirmation email with further details.</li>
+        <li>Payment can be made via credit card or Easypaisa.</li>
+    </ol>
+
+    <h3>Restrictions</h3>
+    <ul>
+        <li>Participants must be at least 16 years old to enroll.</li>
+        <li>Due to limited space, only 50 participants will be accepted on a first-come, first-served basis.</li>
+        <li>Cancellation requests must be made at least 48 hours before the workshop for a full refund.</li>
+        <li>Please inform us of any allergies or special needs in advance.</li>
+    </ul>
+
+    <button class="btn btn-success" id="enrollButton">Enroll Now</button>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Plant Care Guide. All rights reserved.</p>
+</footer>
+
+
+<script>
+    // JavaScript to handle button clicks
+    document.getElementById('quizButton').addEventListener('click', function() {
+        window.location.href = 'quiz.html'; // Redirect to the quiz page
+    });
+
+    document.getElementById('enrollButton').addEventListener('click', function() {
+        window.location.href = 'enrollment.html'; // Redirect to the enrollment page
+    });
+</script>
+</body>
+</html>

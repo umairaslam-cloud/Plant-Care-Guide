@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now - Plant Care Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Enroll in Our Plant Care Workshop</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="care-tips.html">Care Tips</a></li>
+            <li><a href="common-issues.html">Common Issues</a></li>
+            <li><a href="plant-database.html">Plant Database</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Workshop Details</h2>
+    <p>Join us for our hands-on workshop, "Mastering Plant Care," where you will learn essential skills to keep your plants healthy and thriving!</p>
+    <p><strong>Date:</strong> Saturday, March 15, 2024</p>
+    <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+    <p><strong>Location:</strong> Community Garden Center, 123 Greenway Drive</p>
+    <p><strong>Price:</strong> $50 per person</p>
+
+    <h3>Instructions for Enrollment</h3>
+    <ol>
+        <li>Fill out the enrollment form below with your details.</li>
+        <li>Submit the form to confirm your spot in the workshop.</li>
+        <li>You will receive a confirmation email with further details.</li>
+        <li>Payment can be made via credit card or PayPal after submission.</li>
+    </ol>
+
+    <h3>Enrollment Form</h3>
+    <form id="enrollmentForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="comments">Any Comments or Questions:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit" class="button">Submit Enrollment</button>
+    </form>
+
+    <h3>Restrictions</h3>
+    <ul>
+        <li>Participants must be at least 16 years old to enroll.</li>
+        <li>Due to limited space, only 20 participants will be accepted on a first-come, first-served basis.</li>
+        <li>Cancellation requests must be made at least 48 hours before the workshop for a full refund.</li>
+        <li>Please inform us of any allergies or special needs in advance.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2023 Plant Care Guide. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
